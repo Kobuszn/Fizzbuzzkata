@@ -101,5 +101,70 @@ namespace FizzBuzzKata.Tests
             //Assert
             Assert.AreEqual(expected, result);
         }
+
+        [Test]
+        public void FizzBuzzChecker_GivenIntegerOf10_ShouldReturnStringOfBuzz()
+        {
+            //Arrange
+            int input = 10;
+            var sut = new FizzBuzzKata();
+            string expected = "Buzz";
+            //Act
+            var result = sut.FizzBuzzChecker(input);
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void FizzBuzzChecker_GivenIntegerOf15_ShouldReturnStringOfFizzBuzz()
+        {
+            //Arrange
+            int input = 15;
+            var sut = new FizzBuzzKata();
+            string expected = "FizzBuzz";
+            //Act
+            var result = sut.FizzBuzzChecker(input);
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void FizzBuzzChecker_GivenIntegerOf20_ShouldReturnStringOfBuzz()
+        {
+            //Arrange
+            int input = 20;
+            var sut = new FizzBuzzKata();
+            string expected = "Buzz";
+            //Act
+            var result = sut.FizzBuzzChecker(input);
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void FizzBuzzChecker_GivenIntegerOf30_ShouldReturnStringOfFizzBuzz()
+        {
+            //Arrange
+            int input = 30;
+            var sut = new FizzBuzzKata();
+            string expected = "FizzBuzz";
+            //Act
+            var result = sut.FizzBuzzChecker(input);
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void FizzBuzzChecker_GivenIntegerOf75_ShouldReturnStringOfFizzBuzz()
+        {
+            //Arrange
+            int input = 75;
+            var sut = new FizzBuzzKata();
+            string expected = "FizzBuzz";
+            //Act
+            var result = sut.FizzBuzzChecker(input);
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
     }
 }
